@@ -1,10 +1,10 @@
-<!DOCTYPE html><html><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><!--[if IE]><link rel="icon" href="/favicon.ico"><![endif]--><title>vue-reveal</title><meta name=description content="A framework base on reveal.js for easily creating beautiful presentations using vue."><meta name=author content=YunYouJun><meta name=apple-mobile-web-app-capable content=yes><meta name=apple-mobile-web-app-status-bar-style content=black-translucent><link rel=stylesheet href=css/reveal.css><link rel=stylesheet href=css/theme/white.css id=theme><link rel=stylesheet href=lib/css/zenburn.css><script>var link = document.createElement( 'link' );
+<!DOCTYPE html><html><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><!--[if IE]><link rel="icon" href="/vue-reveal/favicon.ico"><![endif]--><title>vue-reveal</title><meta name=description content="A framework base on reveal.js for easily creating beautiful presentations using vue."><meta name=author content=YunYouJun><meta name=apple-mobile-web-app-capable content=yes><meta name=apple-mobile-web-app-status-bar-style content=black-translucent><link rel=stylesheet href=./css/reveal.css><link rel=stylesheet href=./css/theme/white.css id=theme><link rel=stylesheet href=./lib/css/zenburn.css><script>var link = document.createElement( 'link' );
 			link.rel = 'stylesheet';
 			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? './css/print/pdf.css' : './css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );</script><!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
-		<![endif]--><link as=style href=/css/app.2ec987da.css rel=preload><link as=script href=/js/app.52b22dbc.js rel=preload><link as=script href=/js/chunk-vendors.70aa5911.js rel=preload><link href=/css/app.2ec987da.css rel=stylesheet><link rel=icon type=image/png sizes=32x32 href=/img/icons/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/img/icons/favicon-16x16.png><link rel=manifest href=/manifest.json><meta name=theme-color content=#4DBA87><meta name=apple-mobile-web-app-capable content=no><meta name=apple-mobile-web-app-status-bar-style content=default><meta name=apple-mobile-web-app-title content=vue-reveal><link rel=apple-touch-icon href=/img/icons/apple-touch-icon-152x152.png><link rel=mask-icon href=/img/icons/safari-pinned-tab.svg color=#4DBA87><meta name=msapplication-TileImage content=/img/icons/msapplication-icon-144x144.png><meta name=msapplication-TileColor content=#000000></head><body><noscript><strong>We're sorry but vue-reveal doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=app></div><script src=lib/js/head.min.js></script><script src=js/reveal.js></script><script>window.onload = function() {
+		<![endif]--><link as=style href=/vue-reveal/css/app.2ec987da.css rel=preload><link as=script href=/vue-reveal/js/app.35b0ca4e.js rel=preload><link as=script href=/vue-reveal/js/chunk-vendors.70aa5911.js rel=preload><link href=/vue-reveal/css/app.2ec987da.css rel=stylesheet><link rel=icon type=image/png sizes=32x32 href=/vue-reveal/img/icons/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/vue-reveal/img/icons/favicon-16x16.png><link rel=manifest href=/vue-reveal/manifest.json><meta name=theme-color content=#4DBA87><meta name=apple-mobile-web-app-capable content=no><meta name=apple-mobile-web-app-status-bar-style content=default><meta name=apple-mobile-web-app-title content=vue-reveal><link rel=apple-touch-icon href=/vue-reveal/img/icons/apple-touch-icon-152x152.png><link rel=mask-icon href=/vue-reveal/img/icons/safari-pinned-tab.svg color=#4DBA87><meta name=msapplication-TileImage content=/vue-reveal/img/icons/msapplication-icon-144x144.png><meta name=msapplication-TileColor content=#000000></head><body><noscript><strong>We're sorry but vue-reveal doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=app></div><script src=./lib/js/head.min.js></script><script src=./js/reveal.js></script><script>window.onload = function() {
 				// More info https://github.com/hakimel/reveal.js#configuration
 				Reveal.initialize({
 					controls: true,
@@ -14,13 +14,13 @@
 					transition: 'slide', // none/fade/slide/convex/concave/zoom
 					// More info https://github.com/hakimel/reveal.js#dependencies
 					dependencies: [
-						// { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-						{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-						{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-						{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-						// { src: 'plugin/search/search.js', async: true },
-						// { src: 'plugin/zoom-js/zoom.js', async: true },
-						{ src: 'plugin/notes/notes.js', async: true }
+						// { src: './lib/js/classList.js', condition: function() { return !document.body.classList; } },
+						{ src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+						{ src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+						{ src: './plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+						// { src: './plugin/search/search.js', async: true },
+						// { src: './plugin/zoom-js/zoom.js', async: true },
+						{ src: './plugin/notes/notes.js', async: true }
 					]
 				});
-			}</script><script src=/js/chunk-vendors.70aa5911.js></script><script src=/js/app.52b22dbc.js></script></body></html>
+			}</script><script src=/vue-reveal/js/chunk-vendors.70aa5911.js></script><script src=/vue-reveal/js/app.35b0ca4e.js></script></body></html>
