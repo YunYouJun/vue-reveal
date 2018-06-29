@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.3.0/workbox-sw.js");
 
 importScripts(
-  "/vue-reveal/precache-manifest.55651db45d7e3763ae2dc1cb190bba7b.js"
+  "/vue-reveal/precache-manifest.9bbbcdc8a090afc66db378674c8840bc.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "vue-reveal"});
