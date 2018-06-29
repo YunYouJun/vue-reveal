@@ -3,9 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "copy": "cp -rf node_modules/reveal.js/css public/css && cp -rf node_modules/reveal.js/js public/js && cp -rf node_modules/reveal.js/lib public/lib && cp -rf node_modules/reveal.js/plugin public/plugin && cp node_modules/reveal.js/demo.html public/demo.html && cp node_modules/reveal.js/index.html public/simple.html && cp node_modules/reveal.js/README.md public/README.md",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "register-service-worker": "^1.0.0",
@@ -17,7 +20,7 @@
     "@vue/cli-plugin-eslint": "^3.0.0-rc.3",
     "@vue/cli-plugin-pwa": "^3.0.0-rc.3",
     "@vue/cli-service": "^3.0.0-rc.3",
-    "@vue/eslint-config-airbnb": "^3.0.0-rc.3",
+    "gh-pages": "^1.2.0",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.1",
     "vue-template-compiler": "^2.5.16"
