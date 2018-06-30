@@ -1,0 +1,39 @@
+/**
+ * Star theme for vue-reveal.
+ *
+ * Copyright (C) 2018 YunYouJun, https://github.com/YunYouJun/vue-reveal
+ */
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+// Include theme-specific fonts
+@import url(http://fonts.googleapis.com/css?family=Lato:300);
+
+// Override theme settings (see ../template/settings.scss)
+$mainFont: 'Lato', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif;;
+$mainColor: #333;
+$headingFont: 'Lato', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif;;
+$headingColor: #333;
+$headingLetterSpacing: -0.08em;
+$headingTextShadow: none;
+$backgroundColor: transparent;
+$linkColor: #8e71c1;
+$linkColorHover: lighten( $linkColor, 20% );
+$selectionBackgroundColor: #8e71c1;
+
+// Fix links so they are not cut off
+.reveal a {
+	line-height: 1.3em;
+}
+
+// Background generator
+@mixin bodyBackground() {
+	@include radial-gradient( #d0c2e9, #f7fbfc, ellipse );
+}
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------

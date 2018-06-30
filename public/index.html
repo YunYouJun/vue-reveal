@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title>vue-reveal</title>
+    <title><%= process.env.VUE_APP_TITLE %></title>
 
     <meta name="description" content="A framework base on reveal.js for easily creating beautiful presentations using vue.">
     <meta name="author" content="YunYouJun">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="./css/reveal.css">
-		<link rel="stylesheet" href="./css/theme/white.css" id="theme">
+		<!-- <link rel="stylesheet" href="./css/theme/white.css" id="theme"> -->
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="./lib/css/zenburn.css">
 		<!-- Printing and PDF exports -->
@@ -47,12 +47,12 @@
 					transition: 'slide', // none/fade/slide/convex/concave/zoom
 					// More info https://github.com/hakimel/reveal.js#dependencies
 					dependencies: [
-						// { src: './lib/js/classList.js', condition: function() { return !document.body.classList; } },
+						{ src: './lib/js/classList.js', condition: function() { return !document.body.classList; } },
 						{ src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 						{ src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 						{ src: './plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-						// { src: './plugin/search/search.js', async: true },
-						// { src: './plugin/zoom-js/zoom.js', async: true },
+						{ src: './plugin/search/search.js', async: true },
+						{ src: './plugin/zoom-js/zoom.js', async: true },
 						{ src: './plugin/notes/notes.js', async: true }
 					]
 				});

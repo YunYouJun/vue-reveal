@@ -2,6 +2,9 @@ import Vue from 'vue'
 import App from './App.vue'
 import './registerServiceWorker'
 
+// custom css
+import './assets/scss/theme/star.scss'
+
 Vue.config.productionTip = true
 
 // Automatic Global Registration of Base Components
